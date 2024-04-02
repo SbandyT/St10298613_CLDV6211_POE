@@ -1,0 +1,74 @@
+﻿<!-- Information about the html coding below was founded from the html tutorial from this page  https://www.w3schools.com/html/default.asp -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Khumalo Craft</title>
+    
+    <style>
+        
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        .contact-heading {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        
+        .contact-form {
+            margin-top: 30px;
+            text-align: left;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .form-textarea {
+            height: 150px;
+        }
+        
+        .form-submit {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .form-submit:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="container contact-container">
+        <h1 class="contact-heading">Contact Us</h1>
+        
+        <div class="contact-form">
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+                <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+                <textarea name="message" placeholder="Your Message" class="form-input form-textarea" required></textarea>
+                <button type="submit" class="form-submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
