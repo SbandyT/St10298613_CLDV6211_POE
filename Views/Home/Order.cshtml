@@ -1,0 +1,93 @@
+﻿@model Order
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Khumalo Craft</title>
+
+    <style>
+        body {
+            background-color: #2c241d;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .craft-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+            .craft-item img {
+                max-width: 100px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+            }
+
+        .craft-title {
+            font-size: 24px;
+            margin-bottom: 5px;
+            color: #000;
+        }
+
+        .craft-description {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .craft-price {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .order-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+            .order-btn:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Order</h1>
+
+        <div class="craft-item">
+            <img src="~/images/ArtisanaryPottery.jpg" alt="Craftwork 1" class="craft-image">
+            <h2 class="craft-title">Artisanal Pottery</h2>
+            <p class="craft-description">Unique pottery piece created by skilled artisans</p>
+            <p class="craft-price">Price: R750</p>
+            <button class="order-btn">Order Now</button>
+        </div>
+
+        <div class="craft-item">
+            <img src="~/images/MetalArtwork.jpg" alt="Craftwork 2" class="craft-image">
+            <h2 class="craft-title">Metal Artwork</h2>
+            <p class="craft-description">Unique metal artwork pieces including sculptures, jewelry, and wall decor, crafted by skilled metalworkers using techniques such as forging and welding.</p>
+            <p class="craft-price">Price: R800</p>
+            <button class="order-btn">Order Now</button>
+        </div>
+    </div>
+</body>
+</html>

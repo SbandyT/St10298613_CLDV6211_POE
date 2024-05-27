@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Order>
+
+<h1>My Orders</h1>
+@if (Model != null)
+@foreach (var order in Model)
+{
+    <div>
+        <p>Product: @order.Product.Name</p>
+        <p>Quantity: @order.Quantity</p>
+        <p>Order Date: @order.OrderDate</p>
+    </div>
+}
+else
+{
+    <p>No orders found.</p>
+}
+

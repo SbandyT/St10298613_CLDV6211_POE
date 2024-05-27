@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Order>
+
+<h1>All Orders</h1>
+
+@foreach (var order in Model)
+{
+    <div>
+        <p>User: @order.User.Username</p>
+        <p>Product: @order.Product.Name</p>
+        <p>Quantity: @order.Quantity</p>
+        <p>Order Date: @order.OrderDate</p>
+    </div>
+}
+
